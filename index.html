@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Muhamad Denis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            object-fit: cover;
+            border: 4px solid white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <span class="text-xl font-bold text-blue-700">MD.</span>
+            <div class="space-x-4 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#education" class="hover:text-blue-600 transition">Pendidikan</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Keahlian</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 px-4 text-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <div class="w-36 h-36 bg-white rounded-full mx-auto mb-6 overflow-hidden shadow-xl">
+                <!-- Foto Anda Dimasukkan di Sini -->
+                <img src="65aece8d-f195-45ff-9a30-4e1dc1508982.jpg" alt="Muhamad Denis" class="w-full h-full profile-img">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Muhamad Denis</h1>
+            <p class="text-blue-100 text-lg mb-8">Pelajar & Penjelajah Alam</p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <span class="bg-white/20 px-4 py-2 rounded-full"><i class="fas fa-calendar-alt mr-2"></i>06-03-2008</span>
+                <span class="bg-white/20 px-4 py-2 rounded-full"><i class="fas fa-map-marker-alt mr-2"></i>Baleendah, Bandung</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-5xl mx-auto px-4 -mt-10 pb-20">
+        
+        <!-- Info Cards -->
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="glass-card p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                    <i class="fas fa-phone-alt text-xl"></i>
+                </div>
+                <h3 class="font-bold mb-1">Kontak</h3>
+                <p class="text-gray-600 text-sm">083820720959</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center text-pink-600 mb-4">
+                    <i class="fab fa-instagram text-xl"></i>
+                </div>
+                <h3 class="font-bold mb-1">Sosial Media</h3>
+                <p class="text-gray-600 text-sm">@moehammaddennis</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-4">
+                    <i class="fas fa-compass text-xl"></i>
+                </div>
+                <h3 class="font-bold mb-1">Hobby</h3>
+                <p class="text-gray-600 text-sm">Menjelajah Alam</p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <!-- Left Column: About & Education -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- About Section -->
+                <section id="about" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center">
+                        <span class="w-8 h-1 bg-blue-600 mr-3 rounded-full"></span>
+                        Tentang Saya
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Saya adalah seorang pelajar yang memiliki semangat tinggi dalam mengeksplorasi dunia luar. Berdomisili di Bojong Koneng, Rancamanyar, saya aktif dalam berbagai kegiatan fisik dan kompetisi sejak bangku sekolah dasar. Memiliki kecintaan mendalam pada alam bebas dan tantangan fisik.
+                    </p>
+                </section>
+
+                <!-- Education Section -->
+                <section id="education" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="w-8 h-1 bg-blue-600 mr-3 rounded-full"></span>
+                        Riwayat Pendidikan
+                    </h2>
+                    <div class="space-y-6 border-l-2 border-blue-100 ml-4 pl-8 relative">
+                        <!-- SMA -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></span>
+                            <h3 class="font-bold text-lg">SMA KPBE</h3>
+                            <p class="text-blue-600 text-sm font-medium">2023 - 2026</p>
+                            <p class="text-gray-500 text-sm mt-1 italic">Status: Sedang Menempuh Pendidikan</p>
+                        </div>
+                        <!-- SMP -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-blue-400 border-4 border-blue-100"></span>
+                            <h3 class="font-bold text-lg">SMP BE3</h3>
+                            <p class="text-blue-600 text-sm font-medium">2020 - 2023</p>
+                        </div>
+                        <!-- SD -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-blue-300 border-4 border-blue-100"></span>
+                            <h3 class="font-bold text-lg">SD Rancapanjang</h3>
+                            <p class="text-blue-600 text-sm font-medium">2014 - 2020</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience/Achievements -->
+                <section class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="w-8 h-1 bg-blue-600 mr-3 rounded-full"></span>
+                        Pengalaman & Prestasi
+                    </h2>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-orange-50 rounded-xl border border-orange-100">
+                            <i class="fas fa-trophy text-orange-500 mb-2"></i>
+                            <h4 class="font-bold">Juara Tahfidz</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider">Masa SD</p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-xl border border-blue-100">
+                            <i class="fas fa-running text-blue-500 mb-2"></i>
+                            <h4 class="font-bold">Juara 1 Maraton</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider">Masa SMP</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-xl border border-green-100">
+                            <i class="fas fa-mountain text-green-500 mb-2"></i>
+                            <h4 class="font-bold">Mendaki Gunung Tertinggi</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider">Masa SMA - Jawa Barat</p>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-xl border border-purple-100">
+                            <i class="fas fa-certificate text-purple-500 mb-2"></i>
+                            <h4 class="font-bold">Sertifikat PORAK Futsal</h4>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider">Olahraga</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Skills & Languages -->
+            <div class="space-y-8">
+                <!-- Skills -->
+                <section id="skills" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold mb-6">Keahlian</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium border border-blue-100">Memancing</span>
+                        <span class="skill-badge bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium border border-green-100">Mendaki</span>
+                        <span class="skill-badge bg-cyan-50 text-cyan-700 px-4 py-2 rounded-lg text-sm font-medium border border-cyan-100">Renang Laut Lepas</span>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h2 class="text-xl font-bold mb-6">Bahasa</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Indonesia</span>
+                                <span class="text-blue-600">Fasih</span>
+                            </div>
+                            <div class="w-full bg-gray-100 h-2 rounded-full">
+                                <div class="bg-blue-600 h-2 rounded-full w-full"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Sunda</span>
+                                <span class="text-blue-600">Daerah</span>
+                            </div>
+                            <div class="w-full bg-gray-100 h-2 rounded-full">
+                                <div class="bg-blue-400 h-2 rounded-full w-full"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Jawa & Manado</span>
+                                <span class="text-blue-600">Komunikatif</span>
+                            </div>
+                            <div class="w-full bg-gray-100 h-2 rounded-full">
+                                <div class="bg-blue-300 h-2 rounded-full w-4/5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Address Box -->
+                <section class="bg-gray-900 text-white p-8 rounded-2xl shadow-xl">
+                    <h2 class="text-xl font-bold mb-4">Alamat Lengkap</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Bojong Koneng, Kel. Rancamanyar, <br>
+                        Kec. Baleendah, Kab. Bandung, <br>
+                        Jawa Barat.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-800 flex items-center text-xs text-gray-500">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        Data ini dibuat sesuai profil Muhamad Denis
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-10 text-center">
+        <p class="text-gray-500 text-sm">&copy; 2024 Muhamad Denis. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
